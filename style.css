@@ -1,0 +1,54 @@
+::before,::after,*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.timer{
+    position: absolute;
+    top: 10vh;
+    background-color: blue;
+    height: 5vh;
+    width: 200px;
+}
+
+.textContainer{
+    position: relative;
+    top: 15vh;
+    display: block;
+    height: 50vh;
+    width: 30vw;
+    background-color: antiquewhite;
+    border: 1px solid hsl(33, 78%, 45%);
+    font-size: 30px;
+    color: rgb(0, 0, 0,0.3);
+    overflow: scroll;
+    -ms-overflow-style: none;  /* hide scrollbar for IE and Edge */
+    scrollbar-width: none; 
+}
+
+.textContainer::-webkit-scrollbar {
+    display: none; /* hide scrollbar for chrome */
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .textContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+.userInput{
+    position: absolute;
+    top: 65vh;
+    font-size: 50px;
+    text-align: center;
+}

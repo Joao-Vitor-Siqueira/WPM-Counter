@@ -18,6 +18,7 @@ function countDown(){
         secondsLeft --
         if(secondsLeft < 0){
             clearInterval(myinterval)
+            showResults()
         }
     },1000)
 }
@@ -43,7 +44,7 @@ function checkWord(e){
         board.scrollTop += 5;
         
     }
-    if(tries == allWords.length || secondsLeft == 0){
+    if(tries == allWords.length){
         removeChilds(document.body)
         showResults();
     }
